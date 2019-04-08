@@ -78,7 +78,7 @@ class _IndexState extends State<Index> with TickerProviderStateMixin {
       },
     );
 
-    return Scaffold(
+    return Scaffold (
       body: Center(child: _currentPage // 动态的展示我们当前的页面
           ),
       bottomNavigationBar: bottomNavigationBar, // 底部工具栏
