@@ -3,6 +3,10 @@ import 'package:flutter_demo/util/ThemeUtils.dart';
 import 'package:flutter_demo/util/DataUtils.dart';
 import 'package:flutter_demo/constants/Constants.dart';
 import 'package:flutter_demo/events/ChangeThemeEvent.dart';
+import 'package:flutter_demo/keys/swap_color_1.dart';
+import 'package:flutter_demo/keys/swap_color_2.dart';
+import 'package:flutter_demo/keys/swap_color_3.dart';
+import 'package:flutter_demo/keys/swap_color_4.dart';
 
 class WorkLogPage extends StatefulWidget {
   @override
@@ -66,9 +70,16 @@ class _WorkLogPageState extends State<WorkLogPage> with SingleTickerProviderStat
         //  child: null,
         //),
         body: TabBarView(controller: _tabController, children: [
-          Icon(
-            Icons.home,
-            color: Theme.of(context).primaryColor,
+//          Icon(
+//            Icons.home,
+//            color: Theme.of(context).primaryColor,
+//          ),
+          Scaffold(
+            body:
+              //SwapColorDemo1(), //Stateless
+              //SwapColorDemo2(), //stateful without key
+              //SwapColorDemo3(), //stateful with key
+              SwapColorDemo4(),
           ),
           Scaffold(
               appBar: new AppBar(
