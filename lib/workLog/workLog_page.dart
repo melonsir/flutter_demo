@@ -39,7 +39,7 @@ class _WorkLogPageState extends State<WorkLogPage> with SingleTickerProviderStat
 
   void initState() {
     super.initState();
-    _tabController = TabController(vsync: this, length: 3);
+    _tabController = TabController(vsync: this, length: 2);
   }
 
   @override
